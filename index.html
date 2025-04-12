@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <style>
+    body {
+      background-color: #fef6f6;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h2 {
+      color: #ff6b81;
+    }
+    input {
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff4757;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter your Name</h2>
+  <input type="password" id="password" placeholder="Password here">
+  <br>
+  <button onclick="checkPassword()">Enter</button>
+
+  <script>
+    function checkPassword() {
+      var password = document.getElementById('password').value;
+      if(password === "sisam") {
+        window.location.href = "secret.html";
+      } else {
+        alert("Wrong password! Try again.");
+      }
+    }
+  </script>
+</body>
+</html>
